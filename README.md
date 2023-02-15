@@ -1,1 +1,1 @@
-Simple blog with React, Redux and Thunk
+Simple blog with React, Redux and Redux Thunk
