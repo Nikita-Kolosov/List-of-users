@@ -1,1 +1,1 @@
-List of users with filter, delete users and reset action button 
+List of users with search, highlighting matches, deleting users and reset action button
