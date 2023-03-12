@@ -1,1 +1,1 @@
-Simple blog with React, Redux and Redux Thunk
+List of users with filter, delete users and reset action button 

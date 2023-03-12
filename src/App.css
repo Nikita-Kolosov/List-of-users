@@ -1,6 +1,132 @@
-.info-container_group {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  align-items: flex-start;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  background-color: #E5E5E5;
 }
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  padding: 0 30px;
+  height: -webkit-fill-available;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Container start */
+
+.container {
+  background-color: white;
+  min-width: 250px;
+  max-width: 328px;
+  height: 580px;
+  overflow: auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 12px;
+  padding: 16px 16px 0 16px;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #18aaaa;
+}
+
+/* Container end */
+
+/* Input start */
+
+.input {
+  width: 100%;
+  padding: 6px 8px 6px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+}
+
+/* Input end */
+
+/* Reset button start */
+
+.reset-button {
+  display: block;
+  margin-left: auto;
+  width: 68px;
+  height: 26px;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 14px;
+}
+
+/* Reset button end */
+
+/* User start */
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 10px 0;
+}
+
+.user-username {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #828282;
+}
+
+.user-loading, .user-loading {
+  text-align: center;
+}
+
+/* User start */
+
+/* Popup start */
+
+.popup_header {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Popup end */
+
+/* Highlight start */
+
+.highlighted {
+  background-color: yellow;
+}
+
+/* Highlight end */
+
+/* Ref start */
+
+.ref {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #828282;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Ref start */
