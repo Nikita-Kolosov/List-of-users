@@ -16,7 +16,7 @@ const Reducer = (state = initialState, action: UserAction): UserState => {
         case UserActionTypes.FETCH_USER_ERROR: 
             return { loading: false, error: action.payload, users: [], filter: null };
         case UserActionTypes.REMOVE_USER:
-            return { loading: false, error: null, users: [...state.users.filter(user => user.id !== action.payload)], filter: null };
+            return { loading: false, error: null, users: [...state.users.filter(user => user.id !== action.payload)], filter: state.filter };
         case UserActionTypes.FILTER_USER:
             return { loading: false, error: null, users: [...state.users], filter: action.payload };
         case UserActionTypes.RESET_USERS:
